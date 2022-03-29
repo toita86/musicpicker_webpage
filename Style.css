@@ -1,0 +1,349 @@
+body {
+  /*background-image: url("images/angryimg.png");
+  background-image: linear-gradient(
+    117deg,
+    rgba(7, 107, 25, 1) 0%,
+    rgba(6, 83, 19, 1) 3%,
+    rgba(5, 74, 17, 1) 7%,
+    rgba(3, 52, 12, 1) 15%,
+    rgba(1, 15, 3, 1) 25%,
+    rgba(0, 0, 0, 1) 39%
+  );*/
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+html {
+  display: table;
+  margin: auto;
+}
+/*senza p le proprietà si applicano 
+su tutti gli elementi con la stessa classe*/
+h1.title {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font: size 50px;
+}
+
+#rectangle {
+  width: 640px;
+  height: 80px;
+  background: white;
+  border-radius: 15px;
+}
+
+img.search {
+  float: left;
+  width: 7%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+#rectangle input[type="text"] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 25px;
+  margin-right: 16px;
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  width: 450px;
+}
+
+#rectangle input[type="text"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+h2.sub1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font: size 40px;
+}
+
+.pop {
+  grid-area: 1;
+}
+.indie {
+  grid-area: 1/2;
+}
+.hip {
+  grid-area: 2;
+}
+.rock {
+  grid-area: 2/2;
+}
+
+.pod {
+  grid-area: 3;
+}
+.new {
+  grid-area: 3/2;
+}
+.chart {
+  grid-area: 4;
+}
+.hot {
+  grid-area: 4/2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "1" "2"
+    "3" "4";
+  gap: 10px;
+  background-color: none;
+  /*padding: 10px;*/
+}
+
+.grid-container > div {
+  background-color: none;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+p {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+/*-----POP section-----*/
+div.pop {
+  float: left;
+  width: 300px;
+  height: 185px;
+  background: rgb(70, 124, 122);
+  background: linear-gradient(
+    135deg,
+    rgba(70, 124, 122, 1) 0%,
+    rgba(150, 255, 251, 1) 60%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.pop {
+  float: right;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.pop:hover {
+  transform: scale(1.1);
+}
+/*-----indie section-----*/
+div.indie {
+  float: left;
+  width: 300px;
+  height: 185px;
+  margin-left: 30px;
+  background: rgb(13, 34, 180);
+  background: linear-gradient(
+    117deg,
+    rgba(13, 34, 180, 1) 0%,
+    rgba(39, 87, 117, 1) 100%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.indie {
+  float: right;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.indie:hover {
+  transform: scale(1.1);
+}
+/*-----hip-hop section-----*/
+div.hip {
+  float: right;
+  width: 300px;
+  height: 185px;
+  margin-top: 30px;
+  background: rgb(230, 171, 45);
+  background: linear-gradient(
+    312deg,
+    rgba(230, 171, 45, 1) 65%,
+    rgba(131, 100, 32, 1) 100%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.hip {
+  float: right;
+  width: 35%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.hip:hover {
+  transform: scale(1.1);
+}
+/*-----rock section-----*/
+div.rock {
+  float: right;
+  width: 300px;
+  height: 185px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: rgb(219, 38, 38);
+  background: linear-gradient(
+    312deg,
+    rgba(219, 38, 38, 1) 0%,
+    rgba(140, 28, 28, 1) 75%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.rock {
+  float: right;
+  width: 35%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.rock:hover {
+  transform: scale(1.1);
+}
+
+/*-----PODCAST section-----*/
+div.pod {
+  float: left;
+  width: 300px;
+  height: 185px;
+  background: rgb(255, 114, 39);
+  background: linear-gradient(
+    312deg,
+    rgba(255, 114, 39, 1) 0%,
+    rgba(102, 74, 40, 1) 100%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.pod {
+  float: right;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.pod:hover {
+  transform: scale(1.1);
+}
+/*-----NEW RELEASES section-----*/
+div.new {
+  float: left;
+  width: 300px;
+  height: 185px;
+  margin-left: 30px;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    315deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.new {
+  float: right;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.new:hover {
+  transform: scale(1.1);
+}
+/*-----CHARTS section-----*/
+div.chart {
+  float: right;
+  width: 300px;
+  height: 185px;
+  margin-top: 30px;
+  background: rgb(135, 202, 255);
+  background: linear-gradient(
+    315deg,
+    rgba(135, 202, 255, 1) 0%,
+    rgba(43, 255, 220, 1) 100%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.chart {
+  float: right;
+  width: 35%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.chart:hover {
+  transform: scale(1.1);
+}
+/*-----HOT section-----*/
+div.hot {
+  float: right;
+  width: 300px;
+  height: 185px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: rgb(255, 135, 255);
+  background: linear-gradient(
+    162deg,
+    rgba(255, 135, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+img.hot {
+  float: right;
+  width: 35%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+div.hot:hover {
+  transform: scale(1.1);
+}
